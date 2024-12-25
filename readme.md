@@ -75,21 +75,17 @@ Integrate a phone login feature into a Flutter application, including UI compone
   - Button to submit OTP for verification.
 - **Home Screen:**
   - Placeholder screen to confirm successful login.
+  - Get Advertisements by selected City id
 
 ### API Endpoints
 [Postmam](Integration.postman_collection.json)
 
 1. **Login API:**
-   - Endpoint: `/client-api/v1/auth/login`
-   - Method: POST
-   - Request Body: `{ "phone": "0512345678" }`
-   - Response: `{ "success": true, ********** }`
-
 2. **OTP Verification API:**
-   - Endpoint: `/client-api/v1/auth/verify-otp`
-   - Method: POST
-   - Request Body: `{ "phone": "0512345678", "otp": "1234" }`
-   - Response: `{"status": 200,"message": "عملية ناجحة"}`
+3. **Advertisements API:**
+4. **Cities API:**
+
+
 
 ### Clean Architecture Layers
 - **Presentation Layer:**

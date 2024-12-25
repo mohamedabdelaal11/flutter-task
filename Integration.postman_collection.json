@@ -311,6 +311,279 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "Advertisement",
+			"item": [
+				{
+					"name": "get all advertisemnts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token-client}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Api-Key",
+								"value": "{{apiKey}}"
+							},
+							{
+								"key": "Api-Version",
+								"value": "v1"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "{{lang}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{url}}/client-api/v1/advertisements",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"client-api",
+								"v1",
+								"advertisements"
+							],
+							"query": [
+								{
+									"key": "cityId",
+									"value": "13",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "151",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						},
+						"description": "an API which Offers a mean to Re-Send OTP."
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Api-Key",
+										"value": "{{apiKey}}"
+									},
+									{
+										"key": "Api-Version",
+										"value": "v1"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "{{lang}}"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/client-api/v1/advertisements?status=published",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"client-api",
+										"v1",
+										"advertisements"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "published"
+										}
+									]
+								},
+								"description": "an API which Offers a mean to Re-Send OTP."
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\"status\":401,\"message\":\"Unauthenticated.\",\"errors\":{\"message\":[\"Unauthenticated.\"]}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "get all cities",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Api-Key",
+								"value": "{{apiKey}}"
+							},
+							{
+								"key": "Api-Version",
+								"value": "v1"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "{{lang}}"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/client-api/v1/cities?page=0&limit=0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"client-api",
+								"v1",
+								"cities"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "0"
+								}
+							]
+						},
+						"description": "an API which Offers a mean to Re-Send OTP."
+					},
+					"response": [
+						{
+							"name": "Untitled Example",
+							"originalRequest": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Api-Key",
+										"value": "{{apiKey}}"
+									},
+									{
+										"key": "Api-Version",
+										"value": "v1"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "{{lang}}"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/client-api/v1/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"client-api",
+										"v1",
+										"categories"
+									]
+								},
+								"description": "an API which Offers a mean to Re-Send OTP."
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [
+								{
+									"key": "cache-control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\"status\":401,\"message\":\"Unauthenticated.\",\"errors\":{\"message\":[\"Unauthenticated.\"]}}"
+						}
+					]
+				}
+			]
 		}
 	],
 	"auth": {
