@@ -78,7 +78,7 @@ Integrate a phone login feature into a Flutter application, including UI compone
   - Get Advertisements by selected City id
 
 ### API Endpoints
-[Postmam](Integration.postman_collection.json)
+[Postman](Integration.postman_collection.json)
 
 1. **Login API:**
 2. **OTP Verification API:**
