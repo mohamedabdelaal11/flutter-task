@@ -1,5 +1,5 @@
 
-# Flutter Senior Developer Task Document
+# Flutter Developer Task Document
 
 ## Objective
 Integrate a phone login feature into a Flutter application, including UI components and service integration. The flow should cover:
@@ -118,7 +118,3 @@ Integrate a phone login feature into a Flutter application, including UI compone
 - Ensure responsiveness across different screen sizes.
 - Refer to the Figma design for UI implementation consistency.
 
----
-
-## Questions or Clarifications
-For any questions, reach out to the project manager or backend team for API details and support.
